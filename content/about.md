@@ -1,8 +1,9 @@
----
-title: "About"
-date: 2020-02-16T22:39:39+05:30
-draft: false
----
++++
+title = "👩‍💻 About"
+menu = "main"
+url = "about/"
+type = "page"
++++
 
 Dear readers, Welcome to my blog.
 ### Who am I?

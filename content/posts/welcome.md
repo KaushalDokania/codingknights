@@ -2,6 +2,10 @@
 title: "Welcome"
 date: 2020-02-16T21:58:21+05:30
 draft: false
+author: "Kaushal Dokania"
+tags: [
+    "first-post"
+]
 ---
 
 Dear readers, Welcome to my blog.
