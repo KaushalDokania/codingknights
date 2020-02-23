@@ -1,7 +1,7 @@
 ---
 title: "How to Customize Linux PS1 Bash Prompt"
 date: 2020-02-23T19:29:00+05:30
-draft: true
+draft: false
 author: "Kaushal Dokania"
 tags: [
     "linux",
