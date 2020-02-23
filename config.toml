@@ -1,4 +1,4 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "CodingKnights"
+title = "⚔️CodingKnights"
 theme=["hugo-paper-amended", "paper"]

@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Welcome👋"
 date: 2020-02-16T21:58:21+05:30
 draft: false
 author: "Kaushal Dokania"
