@@ -391,6 +391,9 @@ pre, code {
 .post-content th {
   text-align: left;
 }
+.post-content p code {
+  background: rgba(0,0,0,0.1);
+}
 .post-content pre code {
   padding: 20px;
   border-radius: 6px;
