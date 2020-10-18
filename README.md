@@ -1,4 +1,4 @@
-# ⚔️Codingknights
+# ⚔️CodingKnights
 
 ## Important Commands
 
