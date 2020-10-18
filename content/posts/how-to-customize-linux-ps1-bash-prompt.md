@@ -9,11 +9,11 @@ tags: [
 ]
 ---
 
-Most of us work on Linux/Unix terminal some time or other and the bash shell is the place where we spend a lot of time either using Git, writing/running scripts, building/serving applications or analyzing server logs. That's why your bash prompt should be easily readable and have  information important to you. To improve the look and feel even further you can also add colors to your PS1 prompt.
+We spend a lot of time on Linux bash shell either using Git, writing/running scripts, building/serving applications or analyzing server logs. That's why we need a bash prompt which gives us important information and is also easy to read. To improve the look and feel even further you can also add colors to your `PS1` prompt.
 
 ## What is PS1?
 
-PS1(Prompt String 1) is one of the shell prompts available in Linux/Unix. Once you log into a machine, you are presented with a prompt like `kaushal@ubuntu:~ $` where you enter commands to run. Here, $ represents a normal user while the root user is represented by #. On most Linux distros the PS1 prompt displays the current user, hostname and current directory by default.
+`PS1`(Prompt String 1) is one of the shell prompts available in Linux/Unix. Once you log into a machine, you are presented with a prompt like `kaushal@ubuntu:~ $` where you enter commands to run. Here, **$** represents a normal user while the root user is represented by **#**. On most Linux distros the `PS1` prompt displays the current user, hostname and current directory by default.
 
 ### What are the different PS variables?
 
@@ -36,7 +36,7 @@ So, `PS1` is the the first prompt string which you see and where you enter comma
 
 ### How to know your current PS1 variable?
 
-Simply print the PS1 value using echo
+Simply print the `PS1` value using echo
 
     echo $PS1
 
@@ -74,7 +74,7 @@ The following is the list of escape characters supported by the PS variables in 
 
 ## How to modify or change the PS1 prompt?
 
-To modify the PS1 prompt simply set the PS1 environment variable with the desired value.
+To modify the prompt simply set the `PS1` environment variable with the desired value.
 
     PS1="Welcome user"
 
@@ -82,7 +82,7 @@ Output prompt: **Welcome user**
 
 ### More Examples
 
-1. To set PS1 to your current directory you can use
+1. To set `PS1` to your current directory you can use
 
         PS1="$PWD> "
 
@@ -96,17 +96,17 @@ Output prompt: **Welcome user**
 
     Output prompt: **Sun Feb 23 ubuntu $**
 
-3. Below PS1 will display date/time, hostname and the current working directory.
+3. Below `PS1` will display date/time, hostname and the current working directory.
 
         PS1="[\d \t \u@\h:\w ] $ "
 
     Output prompt: **[Sun Feb 23 18:01:40 kaushal@ubuntu:~ ] $**
 
-4. You can also use functions in PS1 prompt. Suppose you want to track free RAM available then add the below function in your `~/.bashrc` file
+4. You can also use functions in `PS1` prompt. Suppose you want to track free RAM available then add the below function in your `~/.bashrc` file
 
     free_ram () { free -m | awk '{print $4}' | head -2 | tail -1; }
 
-    and set the PS1 value to
+    and set the `PS1` value to
 
         PS1='$(free_ram)Mb [\u@\h \W]$ '
 
@@ -123,13 +123,13 @@ Output prompt: **Welcome user**
 
 ## Making the changes permanent
 
-When you set the PS1 in the console the changes are temporarily and are available only for that session. To make the changes permanent add the PS1 variable in your user profile file.
+When you set the `PS1` in the console the changes are temporarily and are available only for that session. To make the changes permanent add the `PS1` variable in your user profile file.
 
     nano ~/.bashrc
 
 To save, hit `CTRL + X` and enter `Y`. The changes will come in affect next time you login to the terminal.
 
-Modifying `~/.bashrc` causes changes to be applicable only for the current user. To make the changes permanent for all the users add the PS1 variable to the following file
+Modifying `~/.bashrc` causes changes to be applicable only for the current user. To make the changes permanent for all the users add the `PS1` variable to the following file
 
 - `/etc/bashrc` for Redhat and friends
 - `/etc/bash.bashrc` for Debian/Ubuntu
@@ -137,6 +137,6 @@ Modifying `~/.bashrc` causes changes to be applicable only for the current user.
 
 ## Conclusion
 
-Modifying the bash prompt is pretty easy and very helpful as it can display any extra information we need. We can also add styles to the PS1 prompt using colors which makes the prompt pleasing to the eyes and more readable in case your screen is full of several commands and outputs.
+Modifying the bash prompt is pretty easy and very helpful as it can display any extra information we need. We can also add styles to the `PS1` prompt using colors which makes the prompt pleasing to the eyes and more readable in case your screen is full of several commands and outputs.
 
 Thanks for reading.
